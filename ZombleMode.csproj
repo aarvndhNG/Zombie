@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Users\BeanPaste\Desktop\Terraria related\TShock4.5.17_Terraria_1.4.3.6\ServerPlugins\</OutputPath>
+    <OutputPath>C:\Users\BeanPaste\Desktop\泰拉瑞亚相关\TShock4.5.17_Terraria_1.4.3.6\ServerPlugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,12 +33,12 @@
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\BeanPaste\Desktop\Terraria related\Experimental.TShock\Newtonsoft.Json.dll</HintPath>
+      <HintPath>C:\Users\BeanPaste\Desktop\泰拉瑞亚相关\Experimental.TShock\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OTAPI, Version=1.4.3.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\BeanPaste\Desktop\Terraria related\Experimental.TShock\OTAPI.dll</HintPath>
+      <HintPath>C:\Users\BeanPaste\Desktop\泰拉瑞亚相关\Experimental.TShock\OTAPI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -51,12 +51,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="TerrariaServer, Version=1.4.3.2, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\BeanPaste\Desktop\Terraria related\Experimental.TShock\TerrariaServer.exe</HintPath>
+      <HintPath>C:\Users\BeanPaste\Desktop\泰拉瑞亚相关\Experimental.TShock\TerrariaServer.exe</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="TShockAPI, Version=4.5.13.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\BeanPaste\Desktop\Terraria related\Experimental.TShock\ServerPlugins\TShockAPI.dll</HintPath>
+      <HintPath>C:\Users\BeanPaste\Desktop\泰拉瑞亚相关\Experimental.TShock\ServerPlugins\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +67,13 @@
     <Compile Include="ZPlayer.cs" />
     <Compile Include="ZRoom.cs" />
     <Compile Include="ZSupply.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniGamesAPI\MiniGamesAPI\MiniGamesAPI.csproj">
+      <Project>{d5c28d67-b400-47aa-92dd-695159dd7783}</Project>
+      <Name>MiniGamesAPI</Name>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
