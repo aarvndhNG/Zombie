@@ -68,5 +68,12 @@
     <Compile Include="ZRoom.cs" />
     <Compile Include="ZSupply.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniGamesAPI\MiniGamesAPI\MiniGamesAPI.csproj">
+      <Project>{d5c28d67-b400-47aa-92dd-695159dd7783}</Project>
+      <Name>MiniGamesAPI</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
